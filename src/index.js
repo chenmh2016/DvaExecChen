@@ -1,5 +1,6 @@
-import dva from 'dva';
+import dva ,{connect} from 'dva';
 import './index.css';
+import 'antd/dist/antd.css';
 import createLogger from 'redux-logger';
 
 // 1. Initialize
@@ -12,6 +13,7 @@ const app = dva({
 
 // 3. Model
 // app.model(require('./models/example').default);
+app.model(require('./models/users').default);
 
 // 4. Router
 app.router(require('./router').default);
