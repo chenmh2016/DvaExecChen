@@ -27,3 +27,46 @@
 .list code {
   background: #f7f7f7;
 }
+header{
+  background:#373d42;
+  height:50px;
+  line-height: 50px;
+  font-family:MicrosoftYaHei;
+  font-size:14px;
+  color:#e6e6e6;
+  letter-spacing:0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+body :global(.ant-layout-sider-trigger) {
+  /*background: #4A5064;*/
+  top: 0px;
+  position: absolute !important;
+}
+:global(.ant-layout-sider-children){
+  margin-top: 50px;
+}
+:global(.ant-layout-sider,.ant-layout-sider:hover){
+  /*background:#333744;;*/
+}
+:global(.ant-menu-item){
+  /*background: #4A5064;*/
+}
+
+:global(.ant-menu.ant-menu-dark .ant-menu-item-selected){
+  /*background-color:#00c1de !important ;*/
+}
+:global(.ant-menu-inline .ant-menu-item){
+  margin-bottom: 0 !important;
+}
+
+:global(.ant-layout-sider-has-trigger){
+  position: fixed !important;
+  height: 100%;
+  margin-top: 50px !important;
+}
+:global(.ant-layout-content){
+  margin-top: 50px !important;
+//margin-left: 155px !important;
+}

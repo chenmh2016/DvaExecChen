@@ -15,11 +15,11 @@ function Users({location,dispatch,users}) {
   const {
     loading,list,total,current,currentItem,modalVisible,modalType
   }=users; //结构users里面的东西，即相当于const loading=users.loading；const list=users.list;
-  const userSearchProps = {};
   const userListProps = { dataSource: list,
     total,
     loading,
     current, };
+  const userSearchProps = {};
   const userModalProps = {};
   return (
     <div className={styles.normal}>

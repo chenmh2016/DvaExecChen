@@ -29,6 +29,7 @@ export default {
   // effect控制数据流程，所以最终我们会在effects中调用reducers
   effects:{
     *query({payload},{select,call,put}){
+      //其中call和put是dva提供的方便操作effects的函数，简单理解call是调用执行一个函数而put是dispatch执行一个action，而select则可以用来访问其他的model
       yield put({type:'showLoading'});
 
       const {data} = yield  call(query);
